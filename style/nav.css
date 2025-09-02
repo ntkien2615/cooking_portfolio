@@ -1,0 +1,93 @@
+/* Header Styles */
+header {
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+    padding: 20px 0px 20px 50px; /* Remove right padding to make logo closer to edge */
+    background-color: transparent;
+    position: absolute;
+    width: 100%; /* Full width to allow logo to be at the very edge */
+    top: 0;
+    left: 0;
+    z-index: 100;
+}
+
+/* Navigation Styles */
+nav {
+    margin-top: 1rem;
+    margin-left: 0.5rem;
+}
+
+nav ul {
+    list-style: none;
+    display: flex;
+    margin: 0;
+    padding: 0;
+}
+
+nav ul li {
+    margin: 0 20px;
+}
+
+nav a {
+    color: #fff;
+    text-decoration: none;
+    font-weight: bold;
+    font-size: 18px;
+    transition: color 0.3s ease;
+}
+
+nav a:hover {
+    color: #12140F;
+}
+
+/* Logo Styles */
+.logo {
+    margin-right: 30px;
+}
+
+.logo img {
+    height: 150px; 
+}
+
+/* Sticky Nav Styles */
+#sticky-nav {
+    position: fixed;
+    top: -100px; /* Start hidden above the viewport */
+    left: 0;
+    width: 100%;
+    background: linear-gradient(135deg, #C7C51B 20%, #31553B 80%);
+    z-index: 999;
+    transition: top 0.4s ease-in-out;
+    padding: 15px 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    box-shadow: 0 2px 5px rgba(0,0,0,0.2);
+}
+
+#sticky-nav.visible {
+    top: 0;
+}
+
+#sticky-nav nav a:hover {
+    color: #12140F;
+}
+
+#sticky-nav nav ul li a {
+    color: #fff;
+    text-decoration: none;
+    font-weight: bold;
+    font-size: 18px;
+}
+
+#sticky-nav nav ul {
+    list-style: none;
+    display: flex;
+    margin: 0;
+    padding: 0;
+}
+
+#sticky-nav nav ul li {
+    margin: 0 20px;
+}

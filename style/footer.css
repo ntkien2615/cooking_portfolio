@@ -1,0 +1,265 @@
+/* Footer Section */
+.footer-section {
+    background: linear-gradient(135deg, #0a1219 0%, #1a2530 100%);
+    color: white;
+    padding: 40px 20px;
+    text-align: center;
+    border-top: 2px solid rgba(255, 107, 53, 0.3);
+    position: relative;
+    overflow: hidden;
+}
+
+.footer-section::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background: linear-gradient(45deg, rgba(255, 255, 255, 0.01) 25%, transparent 25%),
+                linear-gradient(-45deg, rgba(255, 255, 255, 0.01) 25%, transparent 25%),
+                linear-gradient(45deg, transparent 75%, rgba(255, 255, 255, 0.01) 75%),
+                linear-gradient(-45deg, transparent 75%, rgba(255, 255, 255, 0.01) 75%);
+    background-size: 20px 20px;
+    background-position: 0 0, 0 10px, 10px -10px, -10px 0px;
+    pointer-events: none;
+}
+
+.footer-content {
+    max-width: 1200px;
+    margin: 0 auto;
+    position: relative;
+    z-index: 2;
+}
+
+.footer-main {
+    margin-bottom: 20px;
+}
+
+.footer-main p {
+    margin: 10px 0;
+    font-size: 1.1em;
+    color: #e0e0e0;
+}
+
+.footer-location {
+    color: #ff6b35 !important;
+    font-weight: bold;
+    font-size: 1.2em !important;
+    text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.3);
+}
+
+.footer-completion {
+    color: #4CAF50 !important;
+    font-weight: bold;
+    font-size: 1em !important;
+    margin-top: 15px !important;
+    text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.3);
+    background: rgba(76, 175, 80, 0.1);
+    padding: 8px 15px;
+    border-radius: 20px;
+    border: 1px solid rgba(76, 175, 80, 0.3);
+    display: inline-block;
+}
+
+.footer-note {
+    padding: 20px;
+    background: rgba(255, 107, 53, 0.1);
+    border-radius: 15px;
+    border: 1px solid rgba(255, 107, 53, 0.3);
+    margin-top: 20px;
+    position: relative;
+    overflow: hidden;
+}
+
+.footer-note::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: -100%;
+    width: 100%;
+    height: 100%;
+    background: linear-gradient(90deg, transparent, rgba(255, 107, 53, 0.1), transparent);
+    animation: shimmer 3s ease-in-out infinite;
+}
+
+@keyframes shimmer {
+    0%, 100% { left: -100%; }
+    50% { left: 100%; }
+}
+
+.footer-note p {
+    margin: 0;
+    font-size: 1em;
+    color: #e0e0e0;
+    line-height: 1.5;
+    position: relative;
+    z-index: 2;
+}
+
+.footer-note strong {
+    color: #ff6b35;
+    font-weight: bold;
+    text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.3);
+}
+
+/* Vietnam Sovereignty Section */
+.footer-sovereignty {
+    margin-top: 25px;
+    padding: 20px;
+    background: linear-gradient(135deg, rgba(255, 0, 0, 0.1) 0%, rgba(255, 255, 0, 0.1) 100%);
+    border-radius: 15px;
+    border: 2px solid rgba(255, 0, 0, 0.4);
+    position: relative;
+    overflow: hidden;
+}
+
+.footer-sovereignty::before {
+    content: '🇻🇳';
+    position: absolute;
+    top: 10px;
+    right: 15px;
+    font-size: 2em;
+    opacity: 0.3;
+    animation: flagWave 2s ease-in-out infinite;
+}
+
+@keyframes flagWave {
+    0%, 100% { transform: rotate(-5deg); }
+    50% { transform: rotate(5deg); }
+}
+
+.sovereignty-text {
+    margin: 0 0 10px 0 !important;
+    font-size: 1.1em !important;
+    color: #FFD700 !important;
+    font-weight: bold !important;
+    text-align: center;
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
+    line-height: 1.4;
+    position: relative;
+    z-index: 2;
+}
+
+.sovereignty-text-en {
+    margin: 10px 0 0 0 !important;
+    font-size: 1em !important;
+    color: #FFA500 !important;
+    font-weight: bold !important;
+    text-align: center;
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
+    line-height: 1.4;
+    position: relative;
+    z-index: 2;
+    font-style: italic;
+    opacity: 0.9;
+}
+
+.footer-sovereignty:hover {
+    border-color: #ff0000;
+    background: linear-gradient(135deg, rgba(255, 0, 0, 0.15) 0%, rgba(255, 255, 0, 0.15) 100%);
+    transform: translateY(-2px);
+    box-shadow: 0 5px 15px rgba(255, 0, 0, 0.3);
+}
+
+/* Hover effect for footer */
+.footer-section:hover .footer-note {
+    border-color: #ff6b35;
+    background: rgba(255, 107, 53, 0.15);
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+    .footer-section {
+        padding: 30px 15px;
+    }
+    
+    .footer-main p {
+        font-size: 1em;
+    }
+    
+    .footer-location {
+        font-size: 1.1em !important;
+    }
+    
+    .footer-completion {
+        font-size: 0.9em !important;
+        padding: 6px 12px;
+    }
+    
+    .footer-note {
+        padding: 15px;
+    }
+    
+    .footer-note p {
+        font-size: 0.9em;
+    }
+    
+    .footer-sovereignty {
+        margin-top: 20px;
+        padding: 15px;
+    }
+    
+    .sovereignty-text {
+        font-size: 1em !important;
+    }
+    
+    .sovereignty-text-en {
+        font-size: 0.9em !important;
+    }
+    
+    .footer-sovereignty::before {
+        font-size: 1.5em;
+        top: 8px;
+        right: 12px;
+    }
+}
+
+@media (max-width: 480px) {
+    .footer-section {
+        padding: 25px 10px;
+    }
+    
+    .footer-main p {
+        font-size: 0.95em;
+    }
+    
+    .footer-location {
+        font-size: 1em !important;
+    }
+    
+    .footer-completion {
+        font-size: 0.85em !important;
+        padding: 5px 10px;
+        margin-top: 10px !important;
+    }
+    
+    .footer-note {
+        padding: 12px;
+    }
+    
+    .footer-note p {
+        font-size: 0.85em;
+    }
+    
+    .footer-sovereignty {
+        margin-top: 15px;
+        padding: 12px;
+    }
+    
+    .sovereignty-text {
+        font-size: 0.9em !important;
+        line-height: 1.3;
+    }
+    
+    .sovereignty-text-en {
+        font-size: 0.8em !important;
+        line-height: 1.3;
+    }
+    
+    .footer-sovereignty::before {
+        font-size: 1.2em;
+        top: 5px;
+        right: 8px;
+    }
+}

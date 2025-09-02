@@ -1,0 +1,437 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Breaking Bugs Portfolio</title>
+    <link rel="stylesheet" href="style/global.css">
+    <link rel="stylesheet" href="style/nav.css">
+    <link rel="stylesheet" href="style/hero.css">
+    <link rel="stylesheet" href="style/about.css">
+    <link rel="stylesheet" href="style/modal.css">
+    <link rel="stylesheet" href="style/skills.css">
+    <link rel="stylesheet" href="style/projects.css">
+    <link rel="stylesheet" href="style/contact.css">
+    <link rel="stylesheet" href="style/footer.css">
+    <link rel="stylesheet" href="style/animations.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+</head>
+<body>
+    <div id="sticky-nav">
+        <nav>
+            <ul>
+                <li><a href="#home">HOME</a></li>
+                <li><a href="#about">ABOUT</a></li>
+                <li><a href="#skills">SKILLS</a></li>
+                <li><a href="#projects">PROJECTS</a></li>
+                <li><a href="#contact">CONTACT</a></li>
+            </ul>
+        </nav>
+    </div>
+    <header>
+        <nav>
+            <ul>
+                <li><a href="#home">HOME</a></li>
+                <li><a href="#about">ABOUT</a></li>
+                <li><a href="#skills">SKILLS</a></li>
+                <li><a href="#projects">PROJECTS</a></li>
+                <li><a href="#contact">CONTACT</a></li>
+            </ul>
+        </nav>
+        <div class="logo">
+            <img src="img/Breaking-Bugs.png" alt="Breaking Bugs Logo">
+        </div>
+    </header>
+
+    <main>
+        <section id="home" class="hero">
+            <div class="hero-content">
+                <div class="text-content">
+                    <h1 id="typewriter">I'M <span id="changingText"></span><span id="cursor">|</span></h1>
+                    <p>A GenZ Coder with an endless curiosity and unique personality. I thrive on exploring new technologies, breaking down complex problems, and crafting creative solutions. Let me be clear: I don't sell meth — I hunt bugs and turn code chaos into digital masterpieces.</p>
+                    <a href="#skills" class="cta-button">SEE MY WORK</a>
+                </div>
+                <div class="image-content">
+                    <div class="profile-video">
+                        <video autoplay muted loop>
+                            <source src="img/heisenberg-walter-white.mp4" type="video/mp4">
+                            <source src="img/walter-white.webm" type="video/webm">
+                            Your browser does not support the video tag.
+                        </video>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- About Me Section -->
+        <section id="about" class="about-section">
+            <div class="container">
+                <div class="about-header">
+                    <h2 class="breaking-bad-text">"I AM THE ONE WHO TRIES TO DEBUG"</h2>
+                </div>
+                
+                <div class="about-content">
+                    <!-- Personal Story Grid -->
+                    <div class="story-grid">
+                        <div class="story-item">
+                            <div class="story-image-placeholder clickable-image" onclick="openModal('img/about/hcmus.jpg')">
+                                <img src="img/about/hcmus.jpg" alt="HCMUS Journey" />
+                            </div>
+                            <h3>My Journey</h3>
+                            <p>From curiosity to code - how I discovered the world of programming. Currently studying at HCMUS (Ho Chi Minh City University of Science), where I'm expanding my knowledge and sharpening my coding skills every day. (I'm lying, I'm just go there and play games with my friends)</p>
+                        </div>
+                        
+                        <div class="story-item">
+                            <div class="story-image-placeholder clickable-image" onclick="openModal('img/about/bug.png')">
+                                <img src="img/about/bug.png" alt="Bug Hunting" />
+                            </div>
+                            <h3>Breaking Things</h3>
+                            <p>Every bug is a mystery waiting to be solved. But sometimes I create more bugs than I fix. And sometimes I break my computer.</p>
+                        </div>
+                        
+                        <div class="story-item">
+                            <div class="story-image-placeholder clickable-image" onclick="openModal('img/about/achivement.png')">
+                                <img src="img/about/achivement.png" alt="Achievements" />
+                            </div>
+                            <h3>Building Solutions</h3>
+                            <p>Turning ideas into reality, one line of code at a time. Thanks to old technologies is copy and paste, and the new way is AI-assisted development.</p>
+                        </div>
+                    </div>
+                    
+                    <!-- Skills Highlight -->
+                    <div class="skills-preview">
+                        <div class="skills-text">
+                            <h3>What I Bring to the Table</h3>
+                            <p>As a GenZ developer, I combine fresh perspectives with solid fundamentals. I'm passionate about clean code, innovative solutions, and yes - finding those elusive bugs that others miss.</p>
+                        </div>
+                        <div class="skills-image-placeholder clickable-image" onclick="openModal('img/about/skills.png')">
+                            <img src="img/about/skills.png" alt="Skills Showcase" />
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <section id="skills" class="skills-section">
+        <div class="container">
+            <h2>My Skills & Experience</h2>
+            
+            <!-- First Year Products Section -->
+            <div class="first-year-showcase">
+                <div class="showcase-content">
+                    <h3>Look at these amazing products I made in my first year!</h3>
+                    <p class="disclaimer">*Note: Images taken from Schedule 1 and completely fictional</p>
+                </div>
+                <div class="showcase-image clickable-image" onclick="openModal('img/skills/first-year-achivements.png')">
+                    <img src="img/skills/first-year-achivements.png" alt="First Year Projects" />
+                </div>
+            </div>
+
+            <!-- Skills List -->
+            <div class="skills-list">
+                <h3>Technical Skills</h3>
+                
+                <div class="skill-item" onclick="toggleSkillDetails(this)">
+                    <div class="skill-item-header">
+                        <div class="skill-info">
+                            <img src="img/skills/cpp.png" alt="C++" class="skill-icon">
+                            <span class="skill-name">C++</span>
+                        </div>
+                        <div class="skill-rating">
+                            <div class="stars" data-rating="1.5">
+                                <span class="star filled-gray">★</span>
+                                <span class="star half-gray">★</span>
+                                <span class="star empty">★</span>
+                                <span class="star empty">★</span>
+                                <span class="star empty">★</span>
+                                <span class="star empty">★</span>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="skill-details">
+                        <div class="detail-line color-1">• Understanding basic C++ structure and classes</div>
+                        <div class="detail-line color-2">• Have 1 C++ project at university</div>
+                    </div>
+                </div>
+
+                <div class="skill-item" onclick="toggleSkillDetails(this)">
+                    <div class="skill-item-header">
+                        <div class="skill-info">
+                            <img src="img/skills/html-css.png" alt="HTML/CSS" class="skill-icon">
+                            <span class="skill-name">HTML/CSS</span>
+                        </div>
+                        <div class="skill-rating">
+                            <div class="stars" data-rating="2">
+                                <span class="star filled-green">★</span>
+                                <span class="star filled-green">★</span>
+                                <span class="star empty">★</span>
+                                <span class="star empty">★</span>
+                                <span class="star empty">★</span>
+                                <span class="star empty">★</span>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="skill-details">
+                        <div class="detail-line color-3">• Understanding basic HTML/CSS structure</div>
+                        <div class="detail-line color-4">• Know how to use Bootstrap framework</div>
+                    </div>
+                </div>
+
+                <div class="skill-item" onclick="toggleSkillDetails(this)">
+                    <div class="skill-item-header">
+                        <div class="skill-info">
+                            <img src="img/skills/js.png" alt="JavaScript" class="skill-icon">
+                            <span class="skill-name">JavaScript</span>
+                        </div>
+                        <div class="skill-rating">
+                            <div class="stars" data-rating="1">
+                                <span class="star filled-gray">★</span>
+                                <span class="star empty">★</span>
+                                <span class="star empty">★</span>
+                                <span class="star empty">★</span>
+                                <span class="star empty">★</span>
+                                <span class="star empty">★</span>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="skill-details">
+                        <div class="detail-line color-5">• Basic understanding of JavaScript syntax</div>
+                        <div class="detail-line color-6">• Can write simple functions</div>
+                    </div>
+                </div>
+
+                <div class="skill-item" onclick="toggleSkillDetails(this)">
+                    <div class="skill-item-header">
+                        <div class="skill-info">
+                            <img src="img/skills/python.png" alt="Python" class="skill-icon">
+                            <span class="skill-name">Python</span>
+                        </div>
+                        <div class="skill-rating">
+                            <div class="stars" data-rating="2.5">
+                                <span class="star filled-green">★</span>
+                                <span class="star filled-green">★</span>
+                                <span class="star half-blue">★</span>
+                                <span class="star empty">★</span>
+                                <span class="star empty">★</span>
+                                <span class="star empty">★</span>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="skill-details">
+                        <div class="detail-line color-7">• Comfortable with Python syntax and OOP concepts</div>
+                        <div class="detail-line color-8">• Experience with libraries</div>
+                        <div class="detail-line color-1">• Have a bot discord project written in Python (but has a server problem)</div>
+                    </div>
+                </div>
+
+                <div class="skill-item" onclick="toggleSkillDetails(this)">
+                    <div class="skill-item-header">
+                        <div class="skill-info">
+                            <img src="img/skills/cyber_sec.png" alt="Cyber Security" class="skill-icon">
+                            <span class="skill-name">Cyber Security</span>
+                        </div>
+                        <div class="skill-rating">
+                            <div class="stars" data-rating="1.5">
+                                <span class="star filled-gray">★</span>
+                                <span class="star half-gray">★</span>
+                                <span class="star empty">★</span>
+                                <span class="star empty">★</span>
+                                <span class="star empty">★</span>
+                                <span class="star empty">★</span>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="skill-details">
+                        <div class="detail-line color-2">• Basic understanding of network security principles.</div>
+                        <div class="detail-line color-3">• Familiar with common vulnerability types</div>
+                        <div class="detail-line color-4">• Know how to use basic security tools</div>
+                        <div class="detail-line color-5">• I'm the participant in HCMUS-CTF 2025 Final</div>
+                    </div>
+                </div>
+
+                <div class="skill-item" onclick="toggleSkillDetails(this)">
+                    <div class="skill-item-header">
+                        <div class="skill-info">
+                            <img src="img/skills/ai-additon.png" alt="AI Addiction" class="skill-icon">
+                            <span class="skill-name">AI Addiction</span>
+                        </div>
+                        <div class="skill-rating">
+                            <div class="stars" data-rating="6">
+                                <span class="star filled-red">★</span>
+                                <span class="star filled-red">★</span>
+                                <span class="star filled-red">★</span>
+                                <span class="star filled-red">★</span>
+                                <span class="star filled-red">★</span>
+                                <span class="star filled-red">★</span>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="skill-details">
+                        <div class="detail-line color-4">• Completely obsessed with AI</div>
+                        <div class="detail-line color-5">• Uses ChatGPT for literally everything</div>
+                        <div class="detail-line color-6">• Have a nightmare about running out of requests</div>
+                        <div class="detail-line color-7">• Can't code without AI assistance anymore (I can but it takes longer and it's more frustrating)</div>
+                        <div class="detail-line color-8">• This portfolio was probably made with AI help</div>
+                    </div>
+                </div>
+            </div>
+            
+            <!-- Fun Footer Note -->
+            <div class="skills-footer">
+                <p class="disclaimer-text">
+                    If you ask me about my knowledge right now, I might forget everything. 
+                    But if you ask me if I do drugs, I'll call the police :3
+                </p>
+            </div>
+        </div>
+    </section>
+
+    <section id="projects" class="projects-section">
+        <div class="container">
+            <h2>My Projects</h2>
+            
+            <div class="projects-intro">
+                <p>These are small projects to practice and get familiar with HTML and CSS</p>
+            </div>
+            
+            <div class="projects-grid">
+                <div class="project-item">
+                    <div class="project-header">
+                        <h3>HTML Learning Project 001</h3>
+                        <div class="project-tech">
+                            <span class="tech-tag">HTML</span>
+                            <span class="tech-tag">CSS</span>
+                        </div>
+                    </div>
+                    <div class="project-description">
+                        <p>My first HTML and CSS learning project. This project helped me understand the basics of web development and structure.</p>
+                    </div>
+                    <div class="project-links">
+                        <a href="https://github.com/ntkien2615/html_learning_project_001" class="project-link github" target="_blank" rel="noopener">
+                            <i class="fab fa-github"></i>
+                            <span>View on GitHub</span>
+                        </a>
+                    </div>
+                </div>
+
+                <div class="project-item">
+                    <div class="project-header">
+                        <h3>HTML Learning Project 002</h3>
+                        <div class="project-tech">
+                            <span class="tech-tag">HTML</span>
+                            <span class="tech-tag">CSS</span>
+                        </div>
+                    </div>
+                    <div class="project-description">
+                        <p>The second project in my HTML/CSS learning journey. Building upon the first project, this one explores more advanced styling and layout techniques.</p>
+                    </div>
+                    <div class="project-links">
+                        <a href="https://github.com/ntkien2615/html_learning_project_002" class="project-link github" target="_blank" rel="noopener">
+                            <i class="fab fa-github"></i>
+                            <span>View on GitHub</span>
+                        </a>
+                    </div>
+                </div>
+
+                <div class="project-item">
+                    <div class="project-header">
+                        <h3>CTF Quals 2025 Writeups</h3>
+                        <div class="project-tech">
+                            <span class="tech-tag">CTF</span>
+                            <span class="tech-tag">Security</span>
+                            <span class="tech-tag">Writeups</span>
+                        </div>
+                    </div>
+                    <div class="project-description">
+                        <p>My writeups and solutions for HCMUS-CTF qualifying round 2025. This collection showcases 3 cybersecurity challenges I have solved related to basic web and AI security.</p>
+                    </div>
+                    <div class="project-links">
+                        <a href="https://github.com/ntkien2615/ctfquals2025writeupsbyacat" class="project-link github" target="_blank" rel="noopener">
+                            <i class="fab fa-github"></i>
+                            <span>View on GitHub</span>
+                        </a>
+                    </div>
+                </div>
+            </div>
+            
+            <div class="future-projects-note">
+                <div class="note-content">
+                    <h3>🚀 More Projects Coming Soon</h3>
+                    <p>I have many exciting projects planned for the future, ranging from web development to cybersecurity research. Additionally, some of my current projects remain private due to security and confidentiality reasons.</p>
+                    <div class="coming-soon-tags">
+                        <span class="future-tag">Web Development</span>
+                        <span class="future-tag">Discord Bot</span>
+                        <span class="future-tag">Private Projects</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="contact" class="contact-section">
+        <div class="container">
+            <h2>Contact Me</h2>
+            
+            <!-- Characters Animation -->
+            <div class="characters-container">
+                <div class="character-item this-is-me" data-delay="0">
+                    <img src="img/contact/this_is_me.png" alt="This is me" />
+                </div>
+            </div>
+            
+            <!-- Contact Info -->
+            <div class="contact-content">
+                <div class="contact-intro">
+                    <p class="intro-text">Above is me (the person at the bottom), below is how you can find me, and I don't sell drugs</p>
+                </div>
+                
+                <!-- Social Links -->
+                <div class="social-links">
+                    <a href="https://www.facebook.com/kien.33550336/" class="social-link facebook" target="_blank" rel="noopener">
+                        <i class="fab fa-facebook-f"></i>
+                        <span>Facebook</span>
+                    </a>
+                    <a href="https://github.com/ntkien2615" class="social-link github" target="_blank" rel="noopener">
+                        <i class="fab fa-github"></i>
+                        <span>GitHub</span>
+                    </a>
+                    <a href="https://leetcode.com/u/meobocute/" class="social-link leetcode" target="_blank" rel="noopener">
+                        <i class="fas fa-code"></i>
+                        <span>LeetCode</span>
+                    </a>
+                    <a href="https://www.linkedin.com/in/ki%C3%AAn-nguy%E1%BB%85n-trung-511315347/" class="social-link linkedin" target="_blank" rel="noopener">
+                        <i class="fab fa-linkedin-in"></i>
+                        <span>LinkedIn</span>
+                    </a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <footer class="footer-section">
+        <div class="footer-content">
+            <div class="footer-main">
+                <p>&copy; 2025 Nguyen Trung Kien. All rights reserved.</p>
+                <p class="footer-location">From Vietnam with love 🇻🇳</p>
+                <p class="footer-completion">Sản phẩm hoàn thành lần đầu vào ngày 2/9/2025 (80 năm Quốc Khánh)</p>
+            </div>
+            <div class="footer-note">
+                <p>P/S: The coder coding this web just now Mr. White through all review youtube channel called <strong>Phê Phim</strong></p>
+            </div>
+            <div class="footer-sovereignty">
+                <p class="sovereignty-text">Hoàng Sa, Trường Sa là của Việt Nam nghe chưa nếu có tụi Trung, hoặc tụi nào đi tranh chấp ấy xem portfolio của tao</p>
+                <p class="sovereignty-text-en">Paracel Islands and Spratly Islands belong to Vietnam, okay? If there are any Chinese or anyone else trying to dispute this, come check out my portfolio</p>
+            </div>
+        </div>
+    </footer>
+
+    <script src="scripts/main.js"></script>
+    <script src="scripts/typewriter.js"></script>
+    <script src="scripts/modal.js"></script>
+    <script src="scripts/skills.js"></script>
+    <script src="scripts/projects.js"></script>
+    <script src="scripts/contact.js"></script>
+    <script src="scripts/animations.js"></script>
+</body>
+</html>
